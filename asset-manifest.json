@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Binance-Payment-Bot/Web App/static/css/main.21302357.css",
-    "main.js": "/Binance-Payment-Bot/Web App/static/js/main.13bdaa9a.js",
-    "static/js/787.1152285b.chunk.js": "/Binance-Payment-Bot/Web App/static/js/787.1152285b.chunk.js",
-    "index.html": "/Binance-Payment-Bot/Web App/index.html",
-    "main.21302357.css.map": "/Binance-Payment-Bot/Web App/static/css/main.21302357.css.map",
-    "main.13bdaa9a.js.map": "/Binance-Payment-Bot/Web App/static/js/main.13bdaa9a.js.map",
-    "787.1152285b.chunk.js.map": "/Binance-Payment-Bot/Web App/static/js/787.1152285b.chunk.js.map"
+    "main.css": "/Test-Web-App/static/css/main.21302357.css",
+    "main.js": "/Test-Web-App/static/js/main.d23bb69e.js",
+    "static/js/787.1152285b.chunk.js": "/Test-Web-App/static/js/787.1152285b.chunk.js",
+    "index.html": "/Test-Web-App/index.html",
+    "main.21302357.css.map": "/Test-Web-App/static/css/main.21302357.css.map",
+    "main.d23bb69e.js.map": "/Test-Web-App/static/js/main.d23bb69e.js.map",
+    "787.1152285b.chunk.js.map": "/Test-Web-App/static/js/787.1152285b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.21302357.css",
-    "static/js/main.13bdaa9a.js"
+    "static/js/main.d23bb69e.js"
   ]
 }
