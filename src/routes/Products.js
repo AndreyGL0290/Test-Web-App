@@ -15,8 +15,8 @@ const Products = () => {
     
     useEffect(() => {
         tg.MainButton.show()
+        mainButtonBasket(tg)
         tg.MainButton.onClick(() => {
-            mainButtonBasket(tg)
             redirectPage('#/basket')
         })
         if (Object.keys(basket.products).length === 0) tg.MainButton.hide()

@@ -4,16 +4,18 @@ import tg from "../telegram/main"
 import '../css/placeholder.css'
 import basket from "../basket"
 import Image from "./Image"
+
 const Home = props => {
     if (tg.BackButton.isVisible) tg.BackButton.hide()
 
-    if (Object.keys(basket.products).length === 0) {
+    if (Object.keys(basket.products).length === 0) tg.MainButton.hide()
+    else {
         tg.MainButton.show()
+        mainButtonBasket(tg)
         tg.MainButton.onClick(() => {
-            mainButtonBasket(tg)
             redirectPage('#/basket')
         })
-    } else tg.MainButton.hide()
+    }
 
     let data = []
     for (let i = 0; i < Math.ceil(Object.keys(props.groups).length / 2); i++){

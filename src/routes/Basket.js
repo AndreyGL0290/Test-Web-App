@@ -8,14 +8,8 @@ import '../css/basket.css'
 const Basket = () => {
     window.scrollTo(0,0)
     window.sessionStorage.setItem('products', JSON.stringify(basket.products))
+
     if (!tg.BackButton.isVisible) tg.BackButton.show()
-    if (!tg.MainButton.isVisible) {
-        tg.MainButton.onClick(() => {
-            mainButtonConfirm(tg)
-            sendDataToBot(tg)
-        })
-        tg.MainButton.show()
-    }
 
     let [x, setDelete] = useState(false)
     // document.getElementsByClassName('middle-container')[0].style.justifyContent = 'center'
@@ -27,6 +21,12 @@ const Basket = () => {
                 <Link className="get-more-button" to={'../'}>Посмотреть</Link>
             </div>
         )
+    } else {
+        tg.MainButton.show()
+        mainButtonConfirm(tg)
+        tg.MainButton.onClick(() => {
+            sendDataToBot(tg)
+        })
     }
 
     return (
