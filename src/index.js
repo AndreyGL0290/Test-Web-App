@@ -9,6 +9,7 @@ import tg from './telegram/main'
 tg.expand()
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+console.log('Working')
 root.render(
   // For the production use HashRouter
   <HashRouter>
